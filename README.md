@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Click here](https://simpleluke.github.io/Quote-Generator/)
+- Live Site: [Click here](https://simpleluke.github.io/Quote-Generator/)
 
 ### Built with
 
