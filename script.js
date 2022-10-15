@@ -5,8 +5,6 @@ const twitterBtn = document.getElementById("twitter");
 const newQuoteBtn = document.getElementById("new-quote");
 const loader = document.getElementById("loader");
 
-let apiQuotes = [];
-
 // Show Loading
 const showLoadingSpinner = () => {
   loader.hidden = false; //hidden element is on every html elements
@@ -40,7 +38,7 @@ const getQuotes = async () => {
   const apiUrl = "https://jacintodesign.github.io/quotes-api/data/quotes.json";
   try {
     const response = await fetch(apiUrl);
-    apiQuotes = await response.json();
+    const apiQuotes = await response.json();
     newQuote(apiQuotes);
     hideLoadingSpinner();
   } catch (err) {
